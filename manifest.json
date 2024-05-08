@@ -1,0 +1,21 @@
+{
+    "manifest_version" : 3,
+    "name": "Perforce IT",
+    "version": "1.0",
+    "description" : "Search Perforce CL or files on the go!",
+    "icons": {
+        "128" : "icons/p4_128.png",
+        "48"  : "icons/p4_48.png",
+        "16"  : "icons/p4_16.png"
+    },
+    "background":{
+        "service_worker" : "eventPage.js"   
+    },
+    "permissions" : [
+        "tabs",
+        "contextMenus"
+    ],
+    "host_permissions":[
+        "https://*/**"
+    ]
+}
